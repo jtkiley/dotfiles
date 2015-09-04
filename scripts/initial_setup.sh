@@ -2,7 +2,7 @@
 
 #  -------------------------------------------------------------------
 #  Project: dotfiles
-#  File: install_packages.sh
+#  File: initial_setup.sh
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
 #  Copyright waived; public domain.

@@ -1,1 +1,23 @@
 # Jason Kiley's dotfiles
+
+This document (and respository) are very much a work in progress. Pardon the mess.
+
+
+## Initial setup and package installs
+
+The `scripts/initial_setup.sh` script is intended to call per-app scripts that configure each app or install its packages.
+
+- Atom
+- R
+
+
+## To do
+
+- Write overall install instructions
+- Link app downloads
+- Link fonts
+- Set up an `osx.sh` script for my favorite settings.
+- Figure out (whether as `.extra` or something else) a way to handle settings that shouldn't be in a public repo.
+- Write good instructions on per-service ssh keys, particularly the `.ssh/config` part that is missing in my current instructions.
+- Link the sources that I find helpful (other dotfiles repos).
+- Read up on python venvs and decide how I want to handle installs (i.e. venvs or base install).

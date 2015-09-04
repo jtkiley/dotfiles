@@ -1,0 +1,72 @@
+#  -------------------------------------------------------------------
+#  Project: dotfiles
+#  File: .gitignore
+#
+#  Author: Jason T. Kiley (jkiley@icloud.com)
+#  Copyright waived; public domain.
+#
+#  Notes:
+#
+#  -------------------------------------------------------------------
+
+
+# Latex files
+
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.bcf
+*.tui
+*.top
+*.tmp
+*.mp
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.pdf
+*.run.xml
+*.log
+*.tdo
+*.pdf
+*.fls
+*.fdb_latexmk
+gitHeadInfo.gin
+
+# Diffs produced by latexdiff
+# Note: obviously, this requires naming diffs with this suffix.
+*_diff.tex
+
+# Mac IDE files
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Mac finder files and hidden folders
+.DS_Store
+
+# Compiled Python files
+*.pyc
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes

@@ -5,7 +5,7 @@
 #  File: .atom
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
-#  No copyright claimed; public domain.
+#  Copyright waived; public domain.
 #
 #  Notes:
 #

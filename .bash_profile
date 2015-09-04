@@ -1,9 +1,10 @@
 #  -------------------------------------------------------------------
 #  Project: dotfiles
+#  File: .bash_profile
+#
 #  Author: Jason T. Kiley (jkiley@icloud.com)
 #
-#  Notes: Place as ~/.bash_profile
-#         Generally borrowed or adapted from listed sources.
+#  Notes: Generally borrowed or adapted from listed sources.
 #         All claims of copyright waived for anything I did.
 #
 #  -------------------------------------------------------------------

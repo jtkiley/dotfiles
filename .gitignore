@@ -40,11 +40,10 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
+# *.pdf
 *.run.xml
 *.log
 *.tdo
-*.pdf
 *.fls
 *.fdb_latexmk
 gitHeadInfo.gin

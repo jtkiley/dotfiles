@@ -1,4 +1,4 @@
-#  -------------------------------------------------------------------
+######################################################################
 #  Project: dotfiles
 #  File: .bash_profile
 #
@@ -7,31 +7,19 @@
 #  Notes: Generally borrowed or adapted from listed sources.
 #         All claims of copyright waived for anything I did.
 #
-#  -------------------------------------------------------------------
-
-#  -------------------------------------------------------------------
-#  Sections:
-#
-#  1. Prompt
-#  2. Environment variables
-#  3. Aliases and command functions
-#
-#
-#  Note: Organization inspired by
-#        http://natelandau.com/my-mac-osx-bash_profile/
-#  -------------------------------------------------------------------
+######################################################################
 
 
-#  -------------------------------------------------------------------
-#  1. PROMPT
-#  -------------------------------------------------------------------
+######################################################################
+#  PROMPT
+######################################################################
 
 #  Currently happy back with the default. May revisit.
 
 
-#  -------------------------------------------------------------------
-#  2. ENVIRONMENT VARIABLES
-#  -------------------------------------------------------------------
+######################################################################
+#  ENVIRONMENT VARIABLES
+######################################################################
 
 #  Add python folder to the python path.
 export PYTHONPATH=$PYTHONPATH:~/projects/python/contentkit
@@ -39,14 +27,14 @@ export PYTHONPATH=$PYTHONPATH:~/projects/python/contentkit
 #  Use Textmate as default editor.
 export EDITOR="/usr/local/bin/mate -w"
 
-# Python 3.4
-PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+# Python 3.5
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
 
-#  -------------------------------------------------------------------
-#  3. ALIASES AND FUNCTIONS
-#  -------------------------------------------------------------------
+######################################################################
+#  ALIASES AND FUNCTIONS
+######################################################################
 
 #  ls
 alias l='ls -A'
@@ -81,7 +69,7 @@ trash () { command mv "$@" ~/.Trash ; }
 ql () { qlmanage -p "$*" >& /dev/null; }
 
 
-#  -------------------------------------------------------------------
+######################################################################
 #  Idea sources:
 #  - http://natelandau.com/my-mac-osx-bash_profile/
 #
@@ -89,4 +77,4 @@ ql () { qlmanage -p "$*" >& /dev/null; }
 #
 #
 #
-#  -------------------------------------------------------------------
+######################################################################

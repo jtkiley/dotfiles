@@ -2,45 +2,42 @@
 
 ######################################################################
 #  Project: dotfiles
-#  File: .atom
+#  File: python_modules.sh
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
 #  Copyright waived; public domain.
 #
-#  Notes:
+#  Notes: Consider moving to venvs for different uses.
 #
 ######################################################################
 
 
 ######################################################################
-#  LANGUAGES
+#  DATA ANALYSIS
 ######################################################################
 
-apm install language-latex
-apm install language-r
-apm install language-stata
-
-
-######################################################################
-#  UI AND SYNTAX THEMES
-######################################################################
-
-apm install behave-theme
-apm install fizzy
-apm install monokai
-apm install seti-syntax
-apm install spacegray-dark-syntax
-apm install spacegray-dark-ui
-apm install unity-dark-ui
-apm install unity-ui
-apm install xcode-syntax
+pip3 install matplotlib
+pip3 install pandas
+pip3 install statsmodels
 
 
 ######################################################################
-#  PACKAGES
+#  TEXT ANALYSIS
 ######################################################################
 
-apm install file-icons
-apm install pdf-view
-apm install project-manager
-apm install script
+pip3 install beautifulsoup4
+pip3 install textblob
+
+
+######################################################################
+#  PROGRAMMING
+######################################################################
+
+pip3 install flake8
+
+
+######################################################################
+#  GUI AND INTERFACE
+######################################################################
+
+pip3 install jupyter

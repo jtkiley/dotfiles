@@ -27,6 +27,7 @@ pip3 install statsmodels
 ######################################################################
 
 pip3 install beautifulsoup4
+pip3 install nltk
 pip3 install textblob
 
 
@@ -35,6 +36,9 @@ pip3 install textblob
 ######################################################################
 
 pip3 install flake8
+pip3 install nose
+pip3 install numpydoc
+pip3 install sphinx
 
 
 ######################################################################

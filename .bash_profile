@@ -33,8 +33,10 @@ export PATH
 
 # Python virtualenvs
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+export PROJECT_HOME=$HOME/projects
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+source /Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenvwrapper.sh
 
 
 ######################################################################

@@ -39,6 +39,8 @@ pip3 install flake8
 pip3 install nose
 pip3 install numpydoc
 pip3 install sphinx
+pip3 install virtualenv
+pip3 install virtualenvwrapper
 
 
 ######################################################################

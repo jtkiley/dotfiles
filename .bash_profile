@@ -31,6 +31,11 @@ export EDITOR="/usr/local/bin/mate -w"
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
+# Python virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
 
 ######################################################################
 #  ALIASES AND FUNCTIONS

@@ -24,8 +24,8 @@
 #  Add python folder to the python path.
 export PYTHONPATH=$PYTHONPATH:~/projects/python/contentkit
 
-#  Use Textmate as default editor.
-export EDITOR="/usr/local/bin/mate -w"
+#  Use Atom as default editor.
+export EDITOR="/usr/local/bin/atom -w"
 
 # Python 3.5
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
@@ -81,9 +81,6 @@ ql () { qlmanage -p "$*" >& /dev/null; }
 ######################################################################
 #  Idea sources:
 #  - http://natelandau.com/my-mac-osx-bash_profile/
-#
-#
-#
 #
 #
 ######################################################################

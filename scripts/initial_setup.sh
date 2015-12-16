@@ -20,3 +20,6 @@ Rscript ~/dotfiles/scripts/r_packages.r
 
 # Python
 source "./python_modules.sh"
+
+# Configs
+cp ../configs/ssh_config ~/.ssh/config

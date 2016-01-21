@@ -3,7 +3,7 @@
 # File: R packages
 #
 # Author: Jason T. Kiley (jkiley@icloud.com)
-# Copyright waived; public domain.
+# See project LICENSE for copyright and license information.
 #
 # Notes:
 #

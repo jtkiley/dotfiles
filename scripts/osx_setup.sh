@@ -5,7 +5,7 @@
 #  File: initial_setup.sh
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
-#  Not my copyright; see notice from original below.
+#  See copyright and license notice from original below.
 #
 #  Notes: Customized from (the truly epic) ~/.osx — https://mths.be/osx
 #

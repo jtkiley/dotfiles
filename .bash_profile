@@ -3,9 +3,9 @@
 #  File: .bash_profile
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
+#  See project LICENSE for copyright and license information.
 #
 #  Notes: Generally borrowed or adapted from listed sources.
-#         All claims of copyright waived for anything I did.
 #
 ######################################################################
 

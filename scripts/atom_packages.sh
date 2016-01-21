@@ -2,12 +2,12 @@
 
 ######################################################################
 #  Project: dotfiles
-#  File: .atom
+#  File: atom_packages.sh
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
-#  Copyright waived; public domain.
+#  See project LICENSE for copyright and license information.
 #
-#  Notes:
+#  Notes: Change when apm takes package lists with comments.
 #
 ######################################################################
 

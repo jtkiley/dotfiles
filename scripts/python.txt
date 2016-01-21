@@ -1,13 +1,9 @@
-#!/usr/bin/env bash
-
 ######################################################################
 #  Project: dotfiles
-#  File: python_modules.sh
+#  File: python.txt
 #
 #  Author: Jason T. Kiley (jkiley@icloud.com)
-#  Copyright waived; public domain.
-#
-#  Notes: Consider moving to venvs for different uses.
+#  See project LICENSE for copyright and information.
 #
 ######################################################################
 
@@ -16,36 +12,36 @@
 #  DATA ANALYSIS
 ######################################################################
 
-pip3 install matplotlib
-pip3 install pandas
-pip3 install pandas_datareader
-pip3 install statsmodels
+matplotlib
+pandas
+pandas_datareader
+statsmodels
 
 
 ######################################################################
 #  TEXT ANALYSIS
 ######################################################################
 
-pip3 install beautifulsoup4
-pip3 install nltk
-pip3 install textblob
+beautifulsoup4
+nltk
+textblob
 
 
 ######################################################################
 #  PROGRAMMING
 ######################################################################
 
-pip3 install flake8
-pip3 install nose
-pip3 install numpydoc
-pip3 install sphinx
-pip3 install uncommitted
-pip3 install virtualenv
-pip3 install virtualenvwrapper
+flake8
+nose
+numpydoc
+sphinx
+uncommitted
+virtualenv
+virtualenvwrapper
 
 
 ######################################################################
 #  GUI AND INTERFACE
 ######################################################################
 
-pip3 install jupyter
+jupyter

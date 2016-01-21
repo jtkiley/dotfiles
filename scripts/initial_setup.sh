@@ -19,7 +19,7 @@ source "./atom_packages.sh"
 Rscript ~/dotfiles/scripts/r_packages.r
 
 # Python
-source "./python_modules.sh"
+pip3 install -r python.txt
 
 # Configs
 cp ../configs/ssh_config ~/.ssh/config

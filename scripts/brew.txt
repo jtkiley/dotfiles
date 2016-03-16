@@ -1,0 +1,2 @@
+pandoc
+homebrew/science/hdf5

@@ -17,6 +17,7 @@
 ######################################################################
 
 apm install language-latex
+apm install language-pfm
 apm install language-r
 apm install language-stata
 
@@ -40,7 +41,13 @@ apm install xcode-syntax
 #  PACKAGES
 ######################################################################
 
+apm install autocomplete-bibtex
+apm install autocomplete-python
 apm install file-icons
+apm install linter
+apm install linter-flake8
+apm install markdown-preview-plus
 apm install pdf-view
 apm install project-manager
 apm install script
+apm install term3

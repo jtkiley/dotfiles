@@ -1,6 +1,6 @@
 # Jason Kiley's dotfiles
 
-This document (and respository) are very much a work in progress. Pardon the mess.
+This document (and repository) are very much a work in progress. Pardon the mess.
 
 
 ## Install and configure software

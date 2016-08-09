@@ -1,11 +1,6 @@
 ######################################################################
-#  Project: dotfiles
-#  File: .bash_profile
 #
-#  Author: Jason T. Kiley (jkiley@icloud.com)
-#  See project LICENSE for copyright and license information.
-#
-#  Notes: Aliases almost entirely borrowed. See link(s) at bottom.
+#  Aliases almost entirely borrowed. See link(s) at bottom.
 #
 ######################################################################
 

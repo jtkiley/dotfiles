@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
 ######################################################################
-#  Project: dotfiles
-#  File: atom_packages.sh
-#
-#  Author: Jason T. Kiley (jkiley@icloud.com)
-#  See project LICENSE for copyright and license information.
-#
-#  Notes: Change when apm takes package lists with comments.
+#  ATOM PACKAGES
+#  Note: Change when apm takes package lists with comments.
 #
 ######################################################################
 

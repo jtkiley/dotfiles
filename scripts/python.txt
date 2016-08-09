@@ -1,10 +1,5 @@
 ######################################################################
-#  Project: dotfiles
-#  File: python.txt
-#
-#  Author: Jason T. Kiley (jkiley@icloud.com)
-#  See project LICENSE for copyright and license information.
-#
+#  PYTHON PACKAGES
 ######################################################################
 
 
@@ -12,6 +7,7 @@
 #  DATA ANALYSIS
 ######################################################################
 
+ggplot
 matplotlib
 pandas
 pandas_datareader

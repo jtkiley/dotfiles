@@ -1,16 +1,5 @@
 #!/usr/bin/env bash
 
-######################################################################
-#  Project: dotfiles
-#  File: initial_setup.sh
-#
-#  Author: Jason T. Kiley (jkiley@icloud.com)
-#  See project LICENSE for copyright and license information.
-#
-#  Notes:
-#
-######################################################################
-
 
 # Python
 pip3 install -r python.txt

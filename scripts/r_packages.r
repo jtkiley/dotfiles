@@ -1,12 +1,5 @@
 ###########################################################
-# Project: dotfiles
-# File: R packages
-#
-# Author: Jason T. Kiley (jkiley@icloud.com)
-# See project LICENSE for copyright and license information.
-#
-# Notes:
-#
+#  R PACKAGES
 ###########################################################
 
 options(repos='https://rweb.crmda.ku.edu/cran/')

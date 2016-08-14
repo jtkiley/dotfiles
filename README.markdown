@@ -3,10 +3,10 @@
 This document (and repository) are very much a work in progress. Pardon the mess.
 
 
-## Install and configure software
+# Install and configure software
 
 
-### Install from App Store
+## Install from App Store
 
 - [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
 - [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12&uo=4)
@@ -17,15 +17,16 @@ This document (and repository) are very much a work in progress. Pardon the mess
 - [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
 
 
-### Install from Third-Party Websites
+## Install from Third-Party Websites
 
 - Research
     - [Atom](https://atom.io/download/mac)
-    - [R 3.2.3](http://mirrors.nics.utk.edu/cran/bin/macosx/R-3.2.3.pkg)
-    - [R Studio 0.99.489](https://download1.rstudio.org/RStudio-0.99.489.dmg)
+    - [R](https://rweb.crmda.ku.edu/cran/)
+    - [R Studio](https://www.rstudio.com/products/rstudio/download2/)
     - Stata 13 (installed from `iCloud Drive/storage/software/`)
-    - [Python 3.5.1](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg)
-    - [MacTex 2014](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
+    - [Python 3.x](https://www.python.org/downloads/)
+    - [Rodeo](http://bareback.s.yhat.com/download/mac)
+    - [MacTex](https://tug.org/mactex/mactex-download.html)
     - [Dropbox](https://www.dropbox.com/install2)
     - [Sente](http://www.thirdstreetsoftware.com/site/DownloadingSente6.html)
 
@@ -37,13 +38,13 @@ This document (and repository) are very much a work in progress. Pardon the mess
     - [Battle.net Launcher](http://us.battle.net/account/download/index.xml?show=bnetapp&locale=en-us)
 
 
-### Command Line Tools
+## Command Line Tools
 
 - `Xcode > Preferences > Downloads > Command Line Tools`
 - `Atom > Install Shell Commands`
 
 
-### Homebrew
+## Homebrew
 
 [Homebrew](http://brew.sh) is a package manager for OS X.
 
@@ -52,9 +53,9 @@ This document (and repository) are very much a work in progress. Pardon the mess
 ```
 
 
-### Dropbox
+## Dropbox
 
-**ADD: client install**
+*Install the client and let it sync the `mini_projects` folder.*
 
 Link up the mini_projects folder using a symlink.
 These are projects without a git repo.
@@ -64,9 +65,10 @@ ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
 ```
 
 
-### Package installs
+## Package installs
 
-The `scripts/initial_setup.sh` script is intended to call per-app scripts that configure each app or install its packages. It also copies (non-personalized) config files over from the `configs/` directory.
+The `scripts/initial_setup.sh` script calls per-app scripts that configure each app or install its packages.
+It also copies (non-personalized) config files over from the `configs/` directory.
 
 - Python
 - Homebrew
@@ -74,7 +76,7 @@ The `scripts/initial_setup.sh` script is intended to call per-app scripts that c
 - R
 
 
-### Fonts
+## Fonts
 
 * [Adobe Source Code Pro](https://github.com/adobe-fonts/source-code-pro/releases/latest)
 * [Adobe Source Serif Pro](https://github.com/adobe-fonts/source-serif-pro/releases/latest)
@@ -82,16 +84,43 @@ The `scripts/initial_setup.sh` script is intended to call per-app scripts that c
 * [Linux Libertine (OTF)](http://www.linuxlibertine.org/index.php?id=91&L=1)
 
 
-## To do
+## SSH
 
-- Write overall install instructions
-- Set up an `osx.sh` script for my favorite settings.
-- Figure out (whether as `.extra` or something else) a way to handle settings that shouldn't be in a public repo.
-- Write good instructions on per-service ssh keys, particularly the `.ssh/config` part that is missing in my current instructions.
-- Link the sources that I find helpful (other dotfiles repos).
-- **DONE: Basically, use `requirements.txt` in venvs to set up for development.** Read up on python venvs and decide how I want to handle installs (i.e. venvs or base install).
+*Add SSH key generation after looking into email issue.**
 
 
-## LICENSE
+### Github
 
-See the `LICENSE.markdown` file for the MIT license. Please note that some files, particularly `osx_setup.sh`, are borrowed from other dotfiles repositories and not covered by the license. I try to be specific in each file and note whether I wrote it (i.e. it directs you to the LICENSE file) or borrowed it (i.e. it includes a link and a copy of the license from the original repository when available). When in doubt, please ask, though the commit history should make most of it obvious.
+```bash
+# Copy ssh key to github.com
+atom ~/.ssh/github.pub
+
+# Test connection
+ssh -T git@github.com
+
+```
+
+
+### Bitbucket
+
+```bash
+# Copy ssh key to bitbucket.org
+atom ~/.ssh/bitbucket.pub
+
+# Test connection
+ssh -T git@bitbucket.org
+
+```
+
+
+# To do
+
+- Set up an `osx.sh` script for my favorite settings **Comb through latest `.macos` version and just extract what I like or might like**.
+- Figure out (whether as `.extra` or something else) a way to handle settings that shouldn't be in a public repo **DONE: Use `~/Dropbox/_config`**.
+- Add SSH key generation after looking into email issue.
+
+
+
+# LICENSE
+
+See the `LICENSE.markdown` file for the MIT license. Please note that some files, particularly `osx_setup.sh` and `bootstrap.sh`, are borrowed from other dotfiles repositories and have links and their original licenses embedded.

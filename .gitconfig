@@ -1,7 +1,12 @@
 [include]
 	path = ~/Dropbox/_config/gitconfig
 [alias]
+	au = add -u
 	branches = branch -a
+	c = commit
+	cm = commit -m
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	s = status
 [core]
 	editor = atom --wait
 	excludesfile = ~/.gitignore
@@ -11,6 +16,11 @@
 	current = yellow reverse
 	local = yellow
 	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
 [color "status"]
 	added = yellow
 	changed = green

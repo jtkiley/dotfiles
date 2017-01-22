@@ -74,6 +74,7 @@ It also copies (non-personalized) config files over from the `configs/` director
 - Homebrew
 - Atom
 - R
+- SSH keys
 
 
 ## Fonts
@@ -85,9 +86,6 @@ It also copies (non-personalized) config files over from the `configs/` director
 
 
 ## SSH
-
-*Add SSH key generation after looking into email issue.**
-
 
 ### Github
 
@@ -113,14 +111,6 @@ ssh -T git@bitbucket.org
 ```
 
 
-# To do
-
-- Set up an `osx.sh` script for my favorite settings **Comb through latest `.macos` version and just extract what I like or might like**.
-- Figure out (whether as `.extra` or something else) a way to handle settings that shouldn't be in a public repo **DONE: Use `~/Dropbox/_config`**.
-- Add SSH key generation after looking into email issue.
-
-
-
 # LICENSE
 
-See the `LICENSE.markdown` file for the MIT license. Please note that some files, particularly `osx_setup.sh` and `bootstrap.sh`, are borrowed from other dotfiles repositories and have links and their original licenses embedded.
+See the `LICENSE.markdown` file for the MIT license. Please note that some files, particularly `macos.sh` and `bootstrap.sh`, are borrowed from other dotfiles repositories and have links and their original licenses embedded.

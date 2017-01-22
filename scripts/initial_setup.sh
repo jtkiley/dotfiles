@@ -13,5 +13,9 @@ source "./atom_packages.sh"
 # R
 Rscript ~/dotfiles/scripts/r_packages.r
 
-# Configs
+# SSH
+source ~/Dropbox/_config/email.sh
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
 cp ../configs/ssh_config ~/.ssh/config

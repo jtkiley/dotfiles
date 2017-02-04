@@ -9,6 +9,7 @@
 
 ggplot
 matplotlib
+openpyxl
 pandas
 pandas_datareader
 statsmodels
@@ -41,3 +42,4 @@ virtualenvwrapper
 ######################################################################
 
 jupyter
+jupyterlab

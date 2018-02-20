@@ -8,10 +8,12 @@
 ######################################################################
 
 ggplot
+linearmodels
 matplotlib
 openpyxl
 pandas
 pandas_datareader
+pyarrow
 statsmodels
 wrds
 

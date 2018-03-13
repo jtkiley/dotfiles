@@ -7,15 +7,18 @@
 #  DATA ANALYSIS
 ######################################################################
 
+bottleneck
 ggplot
 linearmodels
 matplotlib
+numexpr
 openpyxl
 pandas
 pandas_datareader
 pyarrow
 statsmodels
 wrds
+xlrd
 
 
 ######################################################################

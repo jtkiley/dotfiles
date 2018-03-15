@@ -15,6 +15,7 @@ numexpr
 openpyxl
 pandas
 pandas_datareader
+pandas-profiling
 pyarrow
 statsmodels
 wrds

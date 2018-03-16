@@ -28,6 +28,7 @@
     - [Sente](http://www.thirdstreetsoftware.com/site/DownloadingSente6.html)
 
 - Utilities
+	- [Gitter](https://update.gitter.im/osx/latest)
     - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
     - [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
 
@@ -39,6 +40,7 @@
 
 - `Xcode > Preferences > Downloads > Command Line Tools`
 - `Atom > Install Shell Commands`
+- `Stata > Install Terminal Utility`
 
 
 ## Homebrew

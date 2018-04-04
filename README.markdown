@@ -13,6 +13,7 @@
 - [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12&uo=4)
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12&uo=4)
 - [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
+- [Things](https://itunes.apple.com/us/app/things-3/id904280696?mt=12)
 
 
 ## Install from Third-Party Websites
@@ -26,6 +27,7 @@
     - [MacTex](https://tug.org/mactex/mactex-download.html)
     - [Dropbox](https://www.dropbox.com/install2)
     - [Sente](http://www.thirdstreetsoftware.com/site/DownloadingSente6.html)
+    - [Jupyter Notebook Viewer](https://github.com/tuxu/nbviewer-app/releases/latest)
 
 - Utilities
 	- [Gitter](https://update.gitter.im/osx/latest)

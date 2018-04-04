@@ -22,6 +22,8 @@ apm install language-stata
 ######################################################################
 
 apm install behave-theme
+apm install city-lights-syntax
+apm install city-lights-ui
 apm install fizzy
 apm install monokai
 apm install seti-syntax
@@ -39,6 +41,7 @@ apm install xcode-syntax
 apm install autocomplete-bibtex
 apm install autocomplete-python
 apm install file-icons
+apm install hydrogen
 apm install linter
 apm install linter-flake8
 apm install markdown-preview-plus

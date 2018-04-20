@@ -48,5 +48,5 @@ apm install markdown-preview-plus
 apm install pdf-view
 apm install project-manager
 apm install script
-apm install term3
+# apm install term3
 apm install wordcount

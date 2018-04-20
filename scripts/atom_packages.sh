@@ -13,7 +13,7 @@
 
 apm install language-latex
 apm install language-pfm
-apm install language-r
+# apm install language-r
 apm install language-stata
 
 

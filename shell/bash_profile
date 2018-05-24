@@ -27,8 +27,11 @@ export EDITOR="/usr/local/bin/atom -w"
 #  CONDA
 ######################################################################
 
-. $HOME/anaconda3/etc/profile.d/conda.sh
-# conda activate
+
+if [ -z "${!CONDA_DEFAULT_ENV}" ]; then
+	. $HOME/anaconda3/etc/profile.d/conda.sh
+	conda activate
+fi
 
 
 ######################################################################

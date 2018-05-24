@@ -1,5 +1,7 @@
 # Jason Kiley's dotfiles
 
+My dotfiles for macOS.
+
 
 # Install and configure software
 
@@ -20,10 +22,8 @@
 
 - Research
     - [Atom](https://atom.io/download/mac)
-    - [R](https://rweb.crmda.ku.edu/cran/)
-    - [R Studio](https://www.rstudio.com/products/rstudio/download2/)
+    - [Anaconda](https://www.anaconda.com/download/#macos)
     - Stata 13 and 15 (installed from `iCloud Drive/storage/software/`)
-    - [Python 3.x](https://www.python.org/downloads/)
     - [MacTex](https://tug.org/mactex/mactex-download.html)
     - [Dropbox](https://www.dropbox.com/install2)
     - [Sente](http://www.thirdstreetsoftware.com/site/DownloadingSente6.html)
@@ -34,24 +34,12 @@
     - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
     - [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
 
-- Fun
-    - [Battle.net Launcher](http://us.battle.net/account/download/index.xml?show=bnetapp&locale=en-us)
-
 
 ## Command Line Tools
 
 - `Xcode > Preferences > Downloads > Command Line Tools`
 - `Atom > Install Shell Commands`
 - `Stata > Install Terminal Utility`
-
-
-## Homebrew
-
-[Homebrew](http://brew.sh) is a package manager for OS X.
-
-```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
 
 
 ## Dropbox
@@ -66,18 +54,6 @@ ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
 ```
 
 
-## Package installs
-
-The `scripts/initial_setup.sh` script calls per-app scripts that configure each app or install its packages.
-It also copies (non-personalized) config files over from the `configs/` directory.
-
-- Python
-- Homebrew
-- Atom
-- R
-- SSH keys
-
-
 ## Fonts
 
 * [Adobe Source Code Pro](https://github.com/adobe-fonts/source-code-pro/releases/latest)
@@ -87,6 +63,14 @@ It also copies (non-personalized) config files over from the `configs/` director
 
 
 ## SSH
+
+```bash
+source ~/Dropbox/_config/email.sh
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
+```
+
 
 ### Github
 
@@ -112,6 +96,9 @@ ssh -T git@bitbucket.org
 ```
 
 
-# LICENSE
+# Acknowledgements
 
-See the `LICENSE.markdown` file for the MIT license. Please note that some files, particularly `macos.sh` and `bootstrap.sh`, are borrowed from other dotfiles repositories and have links and their original licenses embedded.
+Most of what it here is code, adaptation, or inspiration from:
+
+- https://github.com/necolas/dotfiles
+- https://github.com/mathiasbynens/dotfiles

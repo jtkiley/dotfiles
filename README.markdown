@@ -95,6 +95,12 @@ ssh -T git@bitbucket.org
 
 ```
 
+### WRDS
+
+```bash
+cat ~/.ssh/id_rsa.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
+```
+
 
 # Acknowledgements
 

@@ -1,6 +1,6 @@
 # Jason Kiley's dotfiles
 
-My dotfiles for macOS.
+My dotfiles for macOS and procedure for setting up a new Mac.
 
 
 # Install and configure software
@@ -12,7 +12,6 @@ My dotfiles for macOS.
 - [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12&uo=4)
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 - [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
-- [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12&uo=4)
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12&uo=4)
 - [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
 - [Things](https://itunes.apple.com/us/app/things-3/id904280696?mt=12)

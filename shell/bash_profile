@@ -21,6 +21,10 @@ source $HOME/dotfiles/shell/bash_prompt
 
 #  Use Atom as default editor.
 export EDITOR="/usr/local/bin/atom -w"
+export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+
+#  Get WRDS username.
+source ~/Dropbox/_config/wrds.sh
 
 
 ######################################################################

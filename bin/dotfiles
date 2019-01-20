@@ -106,6 +106,7 @@ mirrorfiles() {
     link "shell/bashrc"       ".bashrc"
     link "shell/bash_profile" ".bash_profile"
     link "git/gitignore"      ".gitignore"
+    link "shell/condarc"      ".condarc"
 
     ln -fs "${HOME}/Dropbox/_config/ssh-config" "${HOME}/.ssh/config"
 

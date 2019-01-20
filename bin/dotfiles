@@ -107,7 +107,7 @@ mirrorfiles() {
     link "shell/bash_profile" ".bash_profile"
     link "git/gitignore"      ".gitignore"
 
-    ln -fs "~/Dropbox/_config/ssh-config" ".ssh/config"
+    ln -fs "${HOME}/Dropbox/_config/ssh-config" ".ssh/config"
 
     e_success "Dotfiles update complete!"
 }

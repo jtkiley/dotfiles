@@ -23,7 +23,7 @@ source $HOME/dotfiles/shell/bash_prompt
 export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 #  Get WRDS username.
-source ~/Dropbox/_config/wrds.sh
+source ${HOME}/Dropbox/_config/wrds.sh
 
 
 ######################################################################
@@ -38,37 +38,7 @@ conda activate
 #  ALIASES AND FUNCTIONS
 ######################################################################
 
-#  ls
-alias l='ls -A'
-alias ls='ls -G'
-alias ll='ls -FlA'
-alias lf='ls -F'
-
-#  File commands
-alias cp='cp -iv'
-alias mv='mv -iv'
-alias mkdir='mkdir -pv'
-mcd () { mkdir -p "$1" && cd "$1"; }
-
-#  Navigation commands
-cd() { builtin cd "$@"; ll; }
-alias ~='cd ~'
-alias ..='cd ../'
-alias ..2='cd ../../'
-alias ..3='cd ../../../'
-alias ..4='cd ../../../../'
-alias ..5='cd ../../../../../'
-
-#  Terminal and shell
-alias c='clear'
-alias path='echo -e ${PATH//:/\\n}'
-alias DT='tee ~/Desktop/term_output.txt'
-
-#  Mac specific
-alias f='open -a Finder ./'
-alias edit='mate'
-trash () { command mv "$@" ~/.Trash ; }
-ql () { qlmanage -p "$*" >& /dev/null; }
+source $HOME/dotfiles/shell/bash_aliases
 
 
 ######################################################################

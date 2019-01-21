@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# bash_aliases
+
+# ls
+alias l='ls -oGAh'
+alias ls='ls -G'
+alias ll='ls -FGlAh'
+alias lt="ls -toG"
+alias la="ls -AGFoh"
+alias lat="ls -AGFoth"
+
+
+#  Files
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -pv'
+mcd () { mkdir -p "$1" && cd "$1"; }
+
+
+# Navigation
+cd() { builtin cd "$@"; ll; }
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+
+#  Terminal and shell
+alias c='clear'
+alias path='echo -e ${PATH//:/\\n}'
+alias DT='tee ~/Desktop/term_output.txt'
+
+
+#  Mac specific
+alias f='open -a Finder ./'
+alias edit='code'
+trash () { command mv "$@" ~/.Trash ; }

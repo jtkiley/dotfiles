@@ -2,13 +2,21 @@
 
 # bash_aliases
 
+
 # ls
-alias l='ls -oGAh'
-alias ls='ls -G'
-alias ll='ls -FGlAh'
-alias lt="ls -toG"
-alias la="ls -AGFoh"
-alias lat="ls -AGFoth"
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    COLOR='-G'
+elif [[ "$OSTYPE" =~ ^linux ]]; then
+    COLOR='--color=auto'
+fi
+
+alias l='ls -oAh'
+alias ls='ls ${COLOR}'
+alias ll='ls -FlAh'
+alias lt="ls -to"
+alias la="ls -AFoh"
+alias lat="ls -AFoth"
 
 
 #  Files

@@ -8,7 +8,7 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 
 ## Install from App Store
 
-- [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
+- [Magnet](https://itunes.apple.com/us/app/magnet/id441258766?mt=12)
 - [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12&uo=4)
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 - [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
@@ -20,12 +20,11 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 ## Install from Third-Party Websites
 
 - Research
-    - [Atom](https://atom.io/download/mac)
     - [Anaconda](https://www.anaconda.com/download/#macos)
+    - VS Code (from Anaconda)
     - Stata 13 and 15 (installed from `iCloud Drive/storage/software/`)
     - [MacTex](https://tug.org/mactex/mactex-download.html)
     - [Dropbox](https://www.dropbox.com/install2)
-    - [Sente](http://www.thirdstreetsoftware.com/site/DownloadingSente6.html)
     - [Jupyter Notebook Viewer](https://github.com/tuxu/nbviewer-app/releases/latest)
 
 - Utilities
@@ -75,7 +74,7 @@ ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
 
 ```bash
 # Copy ssh key to github.com
-atom ~/.ssh/github.pub
+code ~/.ssh/github.pub
 
 # Test connection
 ssh -T git@github.com
@@ -87,7 +86,7 @@ ssh -T git@github.com
 
 ```bash
 # Copy ssh key to bitbucket.org
-atom ~/.ssh/bitbucket.pub
+code ~/.ssh/bitbucket.pub
 
 # Test connection
 ssh -T git@bitbucket.org

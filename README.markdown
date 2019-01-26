@@ -67,6 +67,7 @@ source ~/Dropbox/_config/email.sh
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/wrds
 ```
 
 
@@ -96,7 +97,7 @@ ssh -T git@bitbucket.org
 ### WRDS
 
 ```bash
-cat ~/.ssh/id_rsa.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
+cat ~/.ssh/wrds.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
 ```
 
 

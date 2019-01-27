@@ -18,10 +18,13 @@ if [[ ! -d ${DOTFILES_DIRECTORY} ]]; then
     rm -rf ${HOME}/dotfiles.tar.gz
 fi
 
-cd ${DOTFILES_DIRECTORY}
+cd ${DOTFILES_DIRECTORY} >/dev/null
 
 source ./lib/utils
 source ./lib/brew
+
+printf "$(tput setaf 7)Installing VSCode packages...\033[m\n"
+cat ./lib/vscode | grep -v '^#' | xargs -L1 code --install-extension
 
 
 # Test for known flags

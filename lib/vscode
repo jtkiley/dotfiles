@@ -9,6 +9,7 @@ redhat.vscode-yaml
 
 # writing
 ban.spellright
+kirozen.wordcounter
 
 
 # LaTeX and pandoc

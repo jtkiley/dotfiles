@@ -3,7 +3,48 @@
 My dotfiles for macOS and procedure for setting up a new Mac.
 
 
+# Initial setup
+
+
+## Dropbox
+
+[Dropbox](https://www.dropbox.com/install2)
+
+*Install the client and let it sync the `mini_projects` and `_config` folders.*
+
+Link up the mini_projects folder using a symlink.
+
+```sh
+ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
+```
+
+## XCode Command Line Tools
+
+```bash
+xcode-select --install
+```
+
+
+## dotfiles
+
+```bash
+$ bash -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
+```
+
+
 # Install and configure software
+
+
+## Install Homebrew cask items
+
+```bash
+brew cask install mactex
+brew cask install jupyter-notebook-viewer
+brew cask install gitter
+brew cask install skype
+brew cask install anaconda
+brew cask install visual-studio-code
+```
 
 
 ## Install from App Store
@@ -19,45 +60,26 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 
 ## Install from Third-Party Websites
 
-- Research
-    - [Anaconda](https://www.anaconda.com/download/#macos)
-    - VS Code (from Anaconda)
-    - Stata 13 and 15 (installed from `iCloud Drive/storage/software/`)
-    - [MacTex](https://tug.org/mactex/mactex-download.html)
-    - [Dropbox](https://www.dropbox.com/install2)
-    - [Jupyter Notebook Viewer](https://github.com/tuxu/nbviewer-app/releases/latest)
-
-- Utilities
-	- [Gitter](https://update.gitter.im/osx/latest)
+    - Stata 15 (installed from `iCloud Drive/storage/software/`)
     - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
-    - [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
 
 
-## Command Line Tools
+## Stata command line
 
-- `Xcode > Preferences > Downloads > Command Line Tools`
-- `Atom > Install Shell Commands`
 - `Stata > Install Terminal Utility`
-
-
-## Dropbox
-
-*Install the client and let it sync the `mini_projects` folder.*
-
-Link up the mini_projects folder using a symlink.
-These are projects without a git repo.
-
-```sh
-ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
-```
 
 
 ## Fonts
 
-* [Adobe Source Code Pro](https://github.com/adobe-fonts/source-code-pro/releases/latest)
-* [Adobe Source Serif Pro](https://github.com/adobe-fonts/source-serif-pro/releases/latest)
-* [Adobe Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro/releases/latest)
-* [Linux Libertine (OTF)](http://www.linuxlibertine.org/index.php?id=91&L=1)
+```bash
+brew tap homebrew/cask-fonts
+brew cask install font-source-code-pro
+brew cask install font-source-serif-pro
+brew cask install font-source-sans-pro
+
+```
+
+- [Linux Libertine (OTF)](http://www.linuxlibertine.org/index.php?id=91&L=1)
 
 
 ## SSH
@@ -100,10 +122,16 @@ ssh -T git@bitbucket.org
 cat ~/.ssh/wrds.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
 ```
 
+# Rerun dotfiles script
+
+```bash
+source ~/dotfiles/bin/dotfiles
+
+```
 
 # Acknowledgements
 
-Most of what it here is code, adaptation, or inspiration from:
+Most of what is here is code, adaptation, or inspiration from:
 
 - https://github.com/necolas/dotfiles
 - https://github.com/mathiasbynens/dotfiles

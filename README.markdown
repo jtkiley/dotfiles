@@ -60,8 +60,8 @@ brew cask install visual-studio-code
 
 ## Install from Third-Party Websites
 
-    - Stata 15 (installed from `iCloud Drive/storage/software/`)
-    - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
+- Stata 15 (installed from `iCloud Drive/storage/software/`)
+- [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
 
 
 ## Stata command line

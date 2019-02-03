@@ -25,6 +25,14 @@ xcode-select --install
 ```
 
 
+## Rust
+
+```bash
+curl https://sh.rustup.rs -sSf | sh
+rustup component add rls rust-analysis rust-src rustfmt
+```
+
+
 ## dotfiles
 
 ```bash

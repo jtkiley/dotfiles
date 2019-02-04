@@ -29,7 +29,6 @@ xcode-select --install
 
 ```bash
 curl https://sh.rustup.rs -sSf | sh
-rustup component add rls rust-analysis rust-src rustfmt
 ```
 
 
@@ -41,6 +40,13 @@ $ bash -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
 
 
 # Install and configure software
+
+
+## Install Rust components
+
+```bash
+rustup component add rls rust-analysis rust-src rustfmt
+```
 
 
 ## Install Homebrew cask items

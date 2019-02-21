@@ -26,6 +26,7 @@ run_brew() {
             'bash-completion'
             'htop'
             'micro'
+            'tree'
             'tmux'
             'wget'
         )

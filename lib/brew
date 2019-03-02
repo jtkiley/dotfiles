@@ -25,6 +25,7 @@ run_brew() {
             'bash'
             'bash-completion'
             'gawk'
+            'highlight'
             'htop'
             'micro'
             'tree'

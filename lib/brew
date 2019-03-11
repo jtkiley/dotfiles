@@ -27,6 +27,7 @@ run_brew() {
             'gawk'
             'highlight'
             'htop'
+            'links'
             'micro'
             'tree'
             'tmux'

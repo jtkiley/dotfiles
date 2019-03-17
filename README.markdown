@@ -59,6 +59,7 @@ brew cask install skype
 brew cask install anaconda
 brew cask install visual-studio-code
 brew cask install docker
+brew cask install postgres
 ```
 
 

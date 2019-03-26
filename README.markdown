@@ -72,6 +72,9 @@ brew cask install postgres
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12&uo=4)
 - [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
 - [Things](https://itunes.apple.com/us/app/things-3/id904280696?mt=12)
+- [Word](https://itunes.apple.com/us/app/microsoft-word/id462054704?mt=12)
+- [Excel](https://itunes.apple.com/us/app/microsoft-excel/id462058435?mt=12)
+- [PowerPoint](https://itunes.apple.com/us/app/microsoft-powerpoint/id462062816?mt=12)
 
 
 ## Install from Third-Party Websites

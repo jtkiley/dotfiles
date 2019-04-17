@@ -29,6 +29,7 @@ run_brew() {
             'htop'
             'links'
             'micro'
+            'rename'
             'tree'
             'tmux'
             'watch'

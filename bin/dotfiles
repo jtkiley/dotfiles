@@ -131,7 +131,7 @@ fi
 seek_confirmation "Warning: This step may modify your OS X system defaults."
 
 if is_confirmed; then
-    bash ./bin/macos
+    zsh ./bin/macos
     e_success "OS X settings updated! You may need to restart."
 else
     printf "Skipped OS X settings update.\n"

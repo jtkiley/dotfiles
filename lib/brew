@@ -22,8 +22,6 @@ run_brew() {
         local -a desired_formulae=(
             'coreutils'
             'git'
-            'bash'
-            'bash-completion'
             'gawk'
             'highlight'
             'htop'

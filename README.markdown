@@ -85,7 +85,7 @@ brew cask install mactex
 brew cask install jupyter-notebook-viewer
 brew cask install gitter
 brew cask install skype
-brew cask install anaconda
+brew cask install miniconda
 brew cask install docker
 brew cask install postgres
 ```

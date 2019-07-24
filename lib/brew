@@ -26,6 +26,7 @@ run_brew() {
             'htop'
             'links'
             'micro'
+            'pandoc'
             'rename'
             'tree'
             'tmux'

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/env zsh
 
 #  Adapted from Mathias Bynens' .macos — https://mths.be/osx
 

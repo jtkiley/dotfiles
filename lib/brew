@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env zsh
 
 # Adapted from: https://github.com/necolas/dotfiles
 

@@ -16,9 +16,3 @@ source ${HOME}/Dropbox/_config/wrds.sh
 
 export PATH=${PATH}:$HOME/.cargo/bin
 export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
-
-conda activate
-
-
-
-

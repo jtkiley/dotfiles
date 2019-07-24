@@ -24,7 +24,9 @@ source ./lib/utils
 source ./lib/brew
 
 printf "$(tput setaf 7)Installing VSCode packages...\033[m\n"
-cat ./lib/vscode | grep -v '^#' | xargs -L1 code --install-extension
+if type_exists 'code'; then
+    cat ./lib/vscode | grep -v '^#' | xargs -L1 code --install-extension
+fi
 
 
 # Test for known flags
@@ -110,6 +112,7 @@ mirrorfiles() {
     link "shell/bash_profile" ".bash_profile"
     link "git/gitignore"      ".gitignore"
     link "shell/condarc"      ".condarc"
+    link "shell/zprofile"     ".zprofile"
 
     e_success "Dotfiles update complete!"
 }
@@ -119,7 +122,7 @@ seek_confirmation "Warning: This step may overwrite your existing dotfiles."
 
 if is_confirmed; then
     mirrorfiles
-    source ${HOME}/.bash_profile
+    source ${HOME}/.zprofile
 else
     printf "Aborting...\n"
     exit 1

@@ -44,7 +44,7 @@ ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/wrds
 
 ```zsh
 # Copy ssh key to github.com
-code ~/.ssh/github.pub
+open -a TextEdit ~/.ssh/github.pub
 
 # Test connection
 ssh -T git@github.com
@@ -71,20 +71,21 @@ $ zsh -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
 
 ## Install Rust components
 
-```bash
+```zsh
 rustup component add rls rust-analysis rust-src rustfmt
 ```
 
 
 ## Install Homebrew cask items
 
-```bash
+```zsh
+brew cask install iterm2
+brew cask install visual-studio-code
 brew cask install mactex
 brew cask install jupyter-notebook-viewer
 brew cask install gitter
 brew cask install skype
 brew cask install anaconda
-brew cask install visual-studio-code
 brew cask install docker
 brew cask install postgres
 ```
@@ -106,7 +107,7 @@ brew cask install postgres
 
 ## Install from Third-Party Websites
 
-- Stata 15 (installed from `iCloud Drive/storage/software/`)
+- Stata 16 (installed from `iCloud Drive/storage/software/`)
 - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
 
 

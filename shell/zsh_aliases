@@ -1,0 +1,46 @@
+#!/bin/env zsh
+
+# zsh_aliases
+
+
+# ls
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    COLOR='-G'
+elif [[ "$OSTYPE" =~ ^linux ]]; then
+    COLOR='--color=auto'
+fi
+
+alias l='ls -oAh'
+alias ls='ls ${COLOR}'
+alias ll='ls -FlAh'
+alias lt="ls -to"
+alias la="ls -AFoh"
+alias lat="ls -AFoth"
+
+
+#  Files
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -pv'
+mcd () { mkdir -p "$1" && cd "$1"; }
+
+
+# Navigation
+cd() { builtin cd "$@"; ll; }
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+
+#  Terminal and shell
+alias c='clear'
+alias path='echo -e ${PATH//:/\\n}'
+alias DT='tee ~/Desktop/term_output.txt'
+
+
+#  Mac specific
+alias f='open -a Finder ./'
+alias edit='code'
+trash () { command mv "$@" ~/.Trash ; }

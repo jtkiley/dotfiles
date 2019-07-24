@@ -1,0 +1,25 @@
+#!/bin/env zsh
+
+# zprofile
+
+
+if [[ $COLORTERM == gnome-* && $TERM == xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+    export TERM=gnome-256color
+elif infocmp xterm-256color >/dev/null 2>&1; then
+    export TERM=xterm-256color
+fi
+
+
+source ${HOME}/dotfiles/shell/zsh_prompt
+source ${HOME}/dotfiles/shell/zsh_aliases
+source ${HOME}/Dropbox/_config/wrds.sh
+
+export PATH=${PATH}:$HOME/.cargo/bin
+export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+
+. ${HOME}/anaconda3/etc/profile.d/conda.sh
+conda activate
+
+
+
+

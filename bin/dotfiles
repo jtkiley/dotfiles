@@ -111,8 +111,6 @@ mirrorfiles() {
     link "git/gitignore"      ".gitignore"
     link "shell/condarc"      ".condarc"
 
-    ln -fs "${HOME}/Dropbox/_config/ssh-config" "${HOME}/.ssh/config"
-
     e_success "Dotfiles update complete!"
 }
 

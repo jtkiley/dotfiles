@@ -14,28 +14,55 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 
 Link up the mini_projects folder using a symlink.
 
-```sh
+```zsh
 ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
 ```
 
 ## XCode Command Line Tools
 
-```bash
+```zsh
 xcode-select --install
+```
+
+## SSH
+
+```zsh
+ln -fs "${HOME}/Dropbox/_config/ssh-config" "${HOME}/.ssh/config"
+```
+
+### Keys
+
+```zsh
+source ~/Dropbox/_config/email.sh
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
+ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/wrds
+```
+
+### Github
+
+```zsh
+# Copy ssh key to github.com
+code ~/.ssh/github.pub
+
+# Test connection
+ssh -T git@github.com
+
 ```
 
 
 ## Rust
 
-```bash
+```zsh
 curl https://sh.rustup.rs -sSf | sh
 ```
 
 
 ## dotfiles
 
-```bash
-$ bash -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
+```zsh
+$ zsh -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
 ```
 
 
@@ -101,27 +128,7 @@ brew cask install font-source-sans-pro
 - [Linux Libertine (OTF)](http://www.linuxlibertine.org/index.php?id=91&L=1)
 
 
-## SSH
-
-```bash
-source ~/Dropbox/_config/email.sh
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/wrds
-```
-
-
-### Github
-
-```bash
-# Copy ssh key to github.com
-code ~/.ssh/github.pub
-
-# Test connection
-ssh -T git@github.com
-
-```
+## More SSH
 
 
 ### Bitbucket

@@ -21,7 +21,6 @@ run_brew() {
         local -a missing_formulae
         local -a desired_formulae=(
             'coreutils'
-            'git'
             'gawk'
             'highlight'
             'htop'
@@ -34,21 +33,21 @@ run_brew() {
             'wget'
         )
 
-        for index in ${desired_formulae};
+        for f in ${desired_formulae};
         do
-            if ! formula_exists ${desired_formulae[$index]}; then
+            if ! formula_exists $f; then
                 # Store the name (and options) of every missing formula
-                missing_formulae=("${missing_formulae}" "${desired_formulae[$index]}")
+                missing_formulae+=($f)
             fi
         done
 
         if [[ "$missing_formulae" ]]; then
             # Convert the array of missing formula into a list of space-separate strings
-            list_formulae="${(j[ ])missing_formulae}"
+            # list_formulae=${(j[ ])missing_formulae}
 
             e_header "Installing missing Homebrew formulae..."
             # Install all missing formulae
-            brew install $list_formulae
+            brew install ${missing_formulae[@]}
 
             [[ $? ]] && e_success "Done"
         fi

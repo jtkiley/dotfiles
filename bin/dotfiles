@@ -113,6 +113,7 @@ mirrorfiles() {
     link "git/gitignore"      ".gitignore"
     link "shell/condarc"      ".condarc"
     link "shell/zprofile"     ".zprofile"
+    link "shell/zshrc"        ".zshrc"
 
     e_success "Dotfiles update complete!"
 }

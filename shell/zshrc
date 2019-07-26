@@ -1,0 +1,33 @@
+
+# oh-my-zsh
+export ZSH="/Users/jkiley/.oh-my-zsh"
+ZSH_THEME="spaceship"
+
+plugins=(
+    time
+    git
+    )
+
+source $ZSH/oh-my-zsh.sh
+
+
+# Conda
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+
+# Custom
+source ${HOME}/dotfiles/shell/zsh_aliases
+source ${HOME}/Dropbox/_config/wrds.sh
+
+export PATH=${PATH}:$HOME/.cargo/bin
+export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin

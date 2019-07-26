@@ -51,6 +51,11 @@ ssh -T git@github.com
 
 ```
 
+## oh-my-zsh
+
+- Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+- Install [Spaceship prompt](https://github.com/denysdovhan/spaceship-prompt).
+
 
 ## Rust
 
@@ -118,7 +123,7 @@ brew cask install postgres
 
 ## Fonts
 
-```bash
+```zsh
 brew tap homebrew/cask-fonts
 brew cask install font-source-code-pro
 brew cask install font-source-serif-pro
@@ -134,7 +139,7 @@ brew cask install font-source-sans-pro
 
 ### Bitbucket
 
-```bash
+```zsh
 # Copy ssh key to bitbucket.org
 code ~/.ssh/bitbucket.pub
 
@@ -145,13 +150,13 @@ ssh -T git@bitbucket.org
 
 ### WRDS
 
-```bash
+```zsh
 cat ~/.ssh/wrds.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
 ```
 
 # Rerun dotfiles script
 
-```bash
+```zsh
 source ~/dotfiles/bin/dotfiles
 
 ```

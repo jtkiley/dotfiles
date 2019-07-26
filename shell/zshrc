@@ -4,8 +4,10 @@ export ZSH="/Users/jkiley/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 plugins=(
-    time
+    cargo
+    rust
     git
+    themes
     )
 
 source $ZSH/oh-my-zsh.sh

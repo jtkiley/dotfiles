@@ -4,15 +4,7 @@
 
 
 # ls
-
-if [[ "$OSTYPE" =~ ^darwin ]]; then
-    COLOR='-G'
-elif [[ "$OSTYPE" =~ ^linux ]]; then
-    COLOR='--color=auto'
-fi
-
 alias l='ls -oAh'
-alias ls='ls ${COLOR}'
 alias ll='ls -FlAh'
 alias lt="ls -to"
 alias la="ls -AFoh"
@@ -28,10 +20,7 @@ mcd () { mkdir -p "$1" && cd "$1"; }
 
 # Navigation
 cd() { builtin cd "$@"; ll; }
-alias ..="cd .."
-alias ...="cd ../.."
 alias ~="cd ~"
-alias -- -="cd -"
 
 
 #  Terminal and shell

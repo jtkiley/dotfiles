@@ -27,6 +27,7 @@ run_brew() {
             'links'
             'micro'
             'pandoc'
+            'pandoc-citeproc'
             'rename'
             'tree'
             'tmux'

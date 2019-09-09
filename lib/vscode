@@ -7,6 +7,7 @@ ms-python.anaconda-extension-pack
 ms-python.python
 redhat.vscode-yaml
 rust-lang.rust
+toasty-technologies.octave
 
 
 # writing
@@ -20,5 +21,7 @@ notZaki.pandocciter
 
 
 # utils
-zeithaste.cursorCharCode
+bibhasdn.unique-lines
+sryze.uridecode
 tomoki1207.pdf
+zeithaste.cursorCharCode

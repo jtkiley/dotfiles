@@ -28,6 +28,7 @@ xcode-select --install
 ## SSH
 
 ```zsh
+mkdir .ssh
 ln -fs "${HOME}/Dropbox/_config/ssh-config" "${HOME}/.ssh/config"
 ```
 

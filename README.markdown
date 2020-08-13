@@ -15,6 +15,7 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 Link up the mini_projects folder using a symlink.
 
 ```zsh
+mkdir projects
 ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
 ```
 

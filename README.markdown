@@ -97,7 +97,6 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install mactex
 brew cask install jupyter-notebook-viewer
-brew cask install gitter
 brew cask install skype
 brew cask install miniconda
 brew cask install docker
@@ -139,8 +138,6 @@ brew cask install font-source-serif-pro
 brew cask install font-source-sans-pro
 
 ```
-
-- [Linux Libertine (OTF)](http://www.linuxlibertine.org/index.php?id=91&L=1)
 
 
 ## More SSH

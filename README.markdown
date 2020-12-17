@@ -116,6 +116,7 @@ brew cask install postgres
 - [Word](https://itunes.apple.com/us/app/microsoft-word/id462054704?mt=12)
 - [Excel](https://itunes.apple.com/us/app/microsoft-excel/id462058435?mt=12)
 - [PowerPoint](https://itunes.apple.com/us/app/microsoft-powerpoint/id462062816?mt=12)
+- [HP Smart for Desktop](https://apps.apple.com/us/app/hp-smart-for-desktop/id1474276998?mt=12)
 
 
 ## Install from Third-Party Websites

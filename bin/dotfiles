@@ -23,12 +23,6 @@ cd ${DOTFILES_DIRECTORY} >/dev/null
 source ./lib/utils
 source ./lib/brew
 
-printf "$(tput setaf 7)Installing VSCode packages...\033[m\n"
-if type_exists 'code'; then
-    cat ./lib/vscode | grep -v '^#' | xargs -L1 code --install-extension
-fi
-
-
 # Test for known flags
 for opt in $@
 do

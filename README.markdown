@@ -134,9 +134,10 @@ brew cask install postgres
 
 ```zsh
 brew tap homebrew/cask-fonts
-brew cask install font-source-code-pro
-brew cask install font-source-serif-pro
-brew cask install font-source-sans-pro
+brew install --cask font-source-code-pro
+brew install --cask font-source-serif-pro
+brew install --cask font-source-sans-pro
+brew install --cask font-libertinus
 
 ```
 

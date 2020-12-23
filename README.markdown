@@ -93,14 +93,14 @@ rustup component add rls rust-analysis rust-src rustfmt
 ## Install Homebrew cask items
 
 ```zsh
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install mactex
-brew cask install jupyter-notebook-viewer
-brew cask install skype
-brew cask install miniconda
-brew cask install docker
-brew cask install postgres
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask mactex
+brew install --cask jupyter-notebook-viewer
+brew install --cask skype
+brew install --cask miniconda
+brew install --cask docker
+brew install --cask postgres
 ```
 
 

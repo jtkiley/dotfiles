@@ -68,9 +68,7 @@ git clone https://github.com/zsh-users/zsh-docker.git ${ZSH_CUSTOM:-~/.oh-my-zsh
 
 ## Rust
 
-```zsh
-curl https://sh.rustup.rs -sSf | sh
-```
+Rust [install page](https://www.rust-lang.org/tools/install).
 
 
 ## dotfiles

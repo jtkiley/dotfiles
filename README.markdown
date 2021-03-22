@@ -5,18 +5,10 @@ My dotfiles for macOS and procedure for setting up a new Mac.
 
 # Initial setup
 
-
-## Dropbox
-
-[Dropbox](https://www.dropbox.com/install2)
-
-*Install the client and let it sync the `mini_projects` and `_config` folders.*
-
-Link up the mini_projects folder using a symlink.
-
 ```zsh
 mkdir projects
-ln -s ~/Dropbox/mini_projects/ ~/projects/mini_projects
+ln -fs "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/mini_projects" \
+~/projects/mini_projects
 ```
 
 ## XCode Command Line Tools
@@ -29,13 +21,14 @@ xcode-select --install
 
 ```zsh
 mkdir .ssh
-ln -fs "${HOME}/Dropbox/_config/ssh-config" "${HOME}/.ssh/config"
+ln -fs "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/ssh-config" \
+"${HOME}/.ssh/config"
 ```
 
 ### Keys
 
 ```zsh
-source ~/Dropbox/_config/email.sh
+source "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/email.sh"
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
 ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
@@ -79,6 +72,10 @@ $ zsh -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
 
 
 # Install and configure software
+
+## Dropbox
+
+[Dropbox](https://www.dropbox.com/install2)
 
 
 ## Install Rust components

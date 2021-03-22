@@ -1,5 +1,5 @@
 [include]
-	path = ~/Dropbox/_config/gitconfig
+	path = "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/gitconfig"
 [alias]
 	au = add -u
 	branches = branch -a

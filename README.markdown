@@ -118,6 +118,7 @@ brew install --cask postgres
 
 - Stata 16 (installed from `iCloud Drive/storage/software/`)
 - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
+- [Zoom](https://zoom.us/download)
 
 
 ## Stata command line

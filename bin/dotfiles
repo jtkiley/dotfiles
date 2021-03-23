@@ -37,7 +37,7 @@ done
 if ! type_exists 'gcc'; then
     e_error "The XCode Command Line Tools must be installed first."
     printf "  Download them from: https://developer.apple.com/downloads\n"
-    printf "  Then run: bash ~/.dotfiles/bin/dotfiles\n"
+    printf "  Then run: zsh ~/.dotfiles/bin/dotfiles\n"
     exit 1
 fi
 
@@ -95,15 +95,10 @@ link() {
 
 mirrorfiles() {
     # Copy `.gitconfig`.
-    # Any global git commands in `~/.bash_profile.local` will be written to
-    # `.gitconfig`. This prevents them being committed to the repository.
     rsync -avz --quiet ${DOTFILES_DIRECTORY}/git/gitconfig  ${HOME}/.gitconfig
 
     # Create the necessary symbolic links between the `.dotfiles` and `HOME`
-    # directory. The `bash_profile` sources other files directly from the
-    # `.dotfiles` repository.
-    link "shell/bashrc"       ".bashrc"
-    link "shell/bash_profile" ".bash_profile"
+    # directory.
     link "git/gitignore"      ".gitignore"
     link "shell/condarc"      ".condarc"
     link "shell/zprofile"     ".zprofile"

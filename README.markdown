@@ -152,11 +152,28 @@ ssh -T git@bitbucket.org
 
 ```
 
-### WRDS
+
+## WRDS
+
+### WRDS SSH
 
 ```zsh
 cat ~/.ssh/wrds.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
 ```
+
+
+### WRDS .pgpass
+
+Set up `.pgpass` for WRDS Postgres (see [here](https://www.postgresql.org/docs/current/libpq-pgpass.html)).
+
+Create `~/.pgpass` with the following contents (with `USERNAME` and `PASSWORD` actually filled in):
+
+```
+wrds-pgdata.wharton.upenn.edu:9737:wrds:USERNAME:PASSWORD
+```
+
+Then `chmod 0600 ~/.pgpass`.
+
 
 # Rerun dotfiles script
 

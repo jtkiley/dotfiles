@@ -40,4 +40,5 @@ source ${HOME}/dotfiles/shell/zsh_aliases
 source "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/wrds.sh"
 
 export PATH=${PATH}:$HOME/.cargo/bin
+export PATH=/opt/homebrew/bin:${PATH}
 export PATH=${PATH}:${HOME}/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin

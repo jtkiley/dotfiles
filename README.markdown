@@ -90,7 +90,8 @@ rustup component add rls rust-analysis rust-src rustfmt
 ```zsh
 brew install --cask iterm2
 brew install --cask visual-studio-code
-brew install --cask mactex
+brew install --cask discord
+brew install --cask mactex-no-gui
 brew install --cask jupyter-notebook-viewer
 brew install --cask skype
 brew install --cask miniconda
@@ -117,7 +118,9 @@ brew install --cask postgres
 ## Install from Third-Party Websites
 
 - Stata 16 (installed from `iCloud Drive/storage/software/`)
+- [Elgato Control Center](https://www.elgato.com/en/downloads)
 - [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
+- [Universal Audio Console and Luna](https://www.uaudio.com/uad/downloads/)
 - [Zoom](https://zoom.us/download)
 
 

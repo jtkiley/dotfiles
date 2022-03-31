@@ -4,7 +4,7 @@ export ZSH="/Users/jkiley/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 plugins=(
-    cargo
+    rust
     git
     themes
     zsh-syntax-highlighting

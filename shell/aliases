@@ -1,6 +1,4 @@
-#!/bin/env zsh
-
-# zsh_aliases
+#!/bin/zsh
 
 
 # ls
@@ -26,10 +24,12 @@ alias ~="cd ~"
 #  Terminal and shell
 alias c='clear'
 alias path='echo -e ${PATH//:/\\n}'
-alias DT='tee ~/Desktop/term_output.txt'
 
 
 #  Mac specific
-alias f='open -a Finder ./'
-alias edit='code'
-trash () { command mv "$@" ~/.Trash ; }
+if [[ $(uname) == "Darwin" ]]; then
+    alias DT='tee ~/Desktop/term_output.txt'
+    alias f='open -a Finder ./'
+    alias edit='code'
+    trash () { command mv "$@" ~/.Trash ; }
+fi

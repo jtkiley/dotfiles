@@ -1,4 +1,0 @@
-channels:
-  - conda-forge
-ssl_verify: true
-changeps1: false

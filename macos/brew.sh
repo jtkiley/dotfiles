@@ -7,6 +7,9 @@ else
     exit 0
 fi
 
+# Brew
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # Packages
 brew install mas
 

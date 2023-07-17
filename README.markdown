@@ -1,193 +1,51 @@
 # Jason Kiley's dotfiles
 
-My dotfiles for macOS and procedure for setting up a new Mac.
+My dotfiles for macOS and Linux containers, with additional install scripts for macOS.
 
+## Containers
 
-# Initial setup
+Add the repository and installer in VS Code, and it will handle the rest.
+The macOS specific parts include an OS check that skips on non-macOS.
 
-```zsh
-mkdir projects
-ln -fs "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/mini_projects" \
-~/projects/mini_projects
-```
+## Initial setup
 
-## XCode Command Line Tools
+### XCode Command Line Tools
 
 ```zsh
 xcode-select --install
 ```
 
-## SSH
+For beta versions of macOS, the command line tools may need to be retrieved from [Apple's XCode Developer Site](https://developer.apple.com/download/all/?q=Xcode).
+
+### Clone dotfiles
 
 ```zsh
-mkdir .ssh
-ln -fs "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/ssh-config" \
-"${HOME}/.ssh/config"
+cd ~
+git clone git@github.com:jtkiley/dotfiles.git
 ```
 
-### Keys
+### Install dotfiles
 
 ```zsh
-source "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/_config/email.sh"
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/id_rsa
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/github
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/bitbucket
-ssh-keygen -t rsa -N '' -C $EMAIL -f ~/.ssh/wrds
+zsh dotfiles/install.sh
 ```
 
-### Github
+### Run brew and cask install script
 
 ```zsh
-# Copy ssh key to github.com
-open -a TextEdit ~/.ssh/github.pub
-
-# Test connection
-ssh -T git@github.com
-
+zsh dotfiles/macos/brew.sh
 ```
 
-## oh-my-zsh
-
-- Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
-- Install [Spaceship prompt](https://github.com/denysdovhan/spaceship-prompt).
+### Run MAS CLI install
 
 ```zsh
-#plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-docker.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-docker
-
+zsh dotfiles/macos/mascli.sh
 ```
 
-## Rust
+### Run macOS setting script
 
-Rust [install page](https://www.rust-lang.org/tools/install).
-
-
-## dotfiles
+**Note:** Before running this, give iTerm2 Full Disk Access in settings.
 
 ```zsh
-$ zsh -c "$(curl -fsSL raw.github.com/jtkiley/dotfiles/master/bin/dotfiles)"
+zsh dotfiles/macos/macos.sh
 ```
-
-
-# Install and configure software
-
-## Dropbox
-
-[Dropbox](https://www.dropbox.com/install2)
-
-
-## Install Rust components
-
-```zsh
-rustup component add rls rust-analysis rust-src rustfmt
-```
-
-
-## Install Homebrew cask items
-
-```zsh
-brew install --cask iterm2
-brew install --cask visual-studio-code
-brew install --cask discord
-brew install --cask mactex-no-gui
-brew install --cask jupyter-notebook-viewer
-brew install --cask skype
-brew install --cask miniconda
-brew install --cask docker
-brew install --cask postgres
-```
-
-
-## Install from App Store
-
-- [Magnet](https://itunes.apple.com/us/app/magnet/id441258766?mt=12)
-- [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12&uo=4)
-- [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
-- [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
-- [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12&uo=4)
-- [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
-- [Things](https://itunes.apple.com/us/app/things-3/id904280696?mt=12)
-- [Word](https://itunes.apple.com/us/app/microsoft-word/id462054704?mt=12)
-- [Excel](https://itunes.apple.com/us/app/microsoft-excel/id462058435?mt=12)
-- [PowerPoint](https://itunes.apple.com/us/app/microsoft-powerpoint/id462062816?mt=12)
-- [HP Smart for Desktop](https://apps.apple.com/us/app/hp-smart-for-desktop/id1474276998?mt=12)
-
-
-## Install from Third-Party Websites
-
-- Stata 16 (installed from `iCloud Drive/storage/software/`)
-- [Elgato Control Center](https://www.elgato.com/en/downloads)
-- [ScanSnap Manager](http://www.fujitsu.com/global/support/computing/peripheral/scanners/software/s1300i.html)
-- [Universal Audio Console and Luna](https://www.uaudio.com/uad/downloads/)
-- [Zoom](https://zoom.us/download)
-
-
-## Stata command line
-
-- `Stata > Install Terminal Utility`
-
-
-## Fonts
-
-```zsh
-brew tap homebrew/cask-fonts
-brew install --cask font-source-code-pro
-brew install --cask font-source-serif-pro
-brew install --cask font-source-sans-pro
-brew install --cask font-libertinus
-
-```
-
-
-## More SSH
-
-
-### Bitbucket
-
-```zsh
-# Copy ssh key to bitbucket.org
-code ~/.ssh/bitbucket.pub
-
-# Test connection
-ssh -T git@bitbucket.org
-
-```
-
-
-## WRDS
-
-### WRDS SSH
-
-```zsh
-cat ~/.ssh/wrds.pub | ssh USERNAME@wrds.wharton.upenn.edu 'cat >> .ssh/authorized_keys'
-```
-
-
-### WRDS .pgpass
-
-Set up `.pgpass` for WRDS Postgres (see [here](https://www.postgresql.org/docs/current/libpq-pgpass.html)).
-
-Create `~/.pgpass` with the following contents (with `USERNAME` and `PASSWORD` actually filled in):
-
-```
-wrds-pgdata.wharton.upenn.edu:9737:wrds:USERNAME:PASSWORD
-```
-
-Then `chmod 0600 ~/.pgpass`.
-
-
-# Rerun dotfiles script
-
-```zsh
-source ~/dotfiles/bin/dotfiles
-
-```
-
-# Acknowledgements
-
-Most of what is here is code, adaptation, or inspiration from:
-
-- https://github.com/necolas/dotfiles
-- https://github.com/mathiasbynens/dotfiles

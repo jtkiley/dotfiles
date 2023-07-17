@@ -21,7 +21,7 @@ For beta versions of macOS, the command line tools may need to be retrieved from
 
 ```zsh
 cd ~
-git clone git@github.com:jtkiley/dotfiles.git
+git clone https://github.com/jtkiley/dotfiles.git
 ```
 
 ### Install dotfiles

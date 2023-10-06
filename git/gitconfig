@@ -1,5 +1,8 @@
-[include]
-	path = "~/Library/Mobile Documents/com~apple~CloudDocs/_config/gitconfig"
+[user]
+	name = Jason T. Kiley
+	email = jtkiley@users.noreply.github.com
+[github]
+	user = jtkiley
 [alias]
 	au = add -u
 	branches = branch -a

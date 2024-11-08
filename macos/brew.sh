@@ -21,8 +21,6 @@ brew install --cask docker
 brew install --cask elgato-control-center
 brew install --cask zoom
 brew install --cask geekbench
-brew install --cask r
-brew install --cask rstudio
 
 # Cask fonts
 brew tap homebrew/cask-fonts

@@ -10,8 +10,8 @@ fi
 # Things
 mas install 904280696
 
-# iStat Menus
-mas install 1319778037
+# iStat Menus 7
+mas install 6499559693
 
 # MS Word
 mas install 462054704

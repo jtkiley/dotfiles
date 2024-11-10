@@ -21,3 +21,6 @@ mas install 462058435
 
 # MS Powerpoint
 mas install 462062816
+
+# MS OneDrive
+mas install 823766827

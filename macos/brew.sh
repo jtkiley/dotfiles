@@ -20,6 +20,7 @@ brew install --cask discord
 brew install --cask docker
 brew install --cask elgato-control-center
 brew install --cask zoom
+brew install --cask microsoft-teams
 brew install --cask geekbench
 
 # Cask fonts

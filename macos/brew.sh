@@ -23,7 +23,6 @@ brew install --cask zoom
 brew install --cask geekbench
 
 # Cask fonts
-brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
 brew install --cask font-source-serif-4
 brew install --cask font-source-sans-3
